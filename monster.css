@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b1b1b1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #242527;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #D9A78B;
+  text-decoration: solid;
+}
+
+.monster-result {
+  font-size: 15px;
+  color: #D9A78B;
+  margin-bottom: 20px;
+}
+
+.monster-stats {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.property-line {
+  margin: 5px 0;
+}
+
+#generateButton {
+  background-color: #F2F2F2;
+  color: #242527;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+  transition: background-color .3s;
+  font-weight: bold;
+
+}
+
+#generateButton:hover {
+  color: #F2F2F2;
+  background-color: #A6634B;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .monster-result {
+    font-size: 1em;
+  }
+
+  #generateButton {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .monster-result {
+    font-size: 0.9em;
+  }
+
+  #generateButton {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
