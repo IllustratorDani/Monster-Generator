@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A random monster generator web page with stats along with the name.">
+    <meta property="og:title" content="Monster List">
+    <meta property="og:description" content="A random monster generator web page with stats along with the name.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Monster List">
+    <meta name="twitter:description" content="A random monster generator web page with stats along with the name.">
+    <meta name="twitter:image" content="">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="monster.css">
     <title>Monster List</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -12,11 +22,11 @@
 
 <body>
 
-    <div class="container">
+    <main class="container" role="main">
         <h1>Random Monster Generator</h1>
-        <div class="monster-result" id="monsterResult"> </div>
-        <button id="generateButton">Generate Monster</button>
-    </div>
+        <div class="monster-result" id="monsterResult" tabindex="0" aria-live="polite"> </div>
+        <button id="generateButton" aria-label="Generate a random monster">Generate Monster</button>
+    </main>
     <br>
     <script>
 
