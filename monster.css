@@ -2,64 +2,96 @@
   background: #242527;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-  padding: 32px 24px;
-  width: 95%;
-  max-width: 420px;
+  padding: 2em 1em;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
-  margin: 24px auto;
+  margin: 2em auto;
   font-family: 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 
+
 h1 {
-  font-size: 2.2em;
-  margin-bottom: 18px;
+  font-size: 2em;
+  margin-bottom: 1em;
   color: #D9A78B;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 
+
 .monster-result,
 h2 {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #F2F2F2;
-  margin-bottom: 18px;
+  margin-bottom: 1em;
   word-break: break-word;
 }
 
 
+
 .monster-stats {
   text-align: left;
-  margin: 18px 0;
+  margin: 1em 0;
   background: #1a1b1d;
   border-radius: 8px;
-  padding: 16px;
+  padding: 1em;
   color: #f2e9e1;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 
 
+
 .property-line {
-  margin: 6px 0;
+  margin: 0.5em 0;
 }
+
 
 
 #generateButton {
   background: linear-gradient(90deg, #D9A78B 0%, #A6634B 100%);
   color: #242527;
   border: none;
-  padding: 12px 28px;
+  padding: 0.75em 2em;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: background 0.3s, color 0.3s;
 }
 
 
+
 #generateButton:hover {
   color: #F2F2F2;
   background: linear-gradient(90deg, #A6634B 0%, #D9A78B 100%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 1em 0.5em;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .monster-result,
+  h2 {
+    font-size: 0.95em;
+  }
+
+  #generateButton {
+    padding: 0.5em 1em;
+    font-size: 0.95em;
+  }
+
+  .monster-stats {
+    padding: 0.7em;
+  }
 }
